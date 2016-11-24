@@ -6,7 +6,7 @@
 /*   By: lomeress <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/21 11:08:53 by lomeress          #+#    #+#             */
-/*   Updated: 2016/11/23 10:00:44 by lomeress         ###   ########.fr       */
+/*   Updated: 2016/11/24 09:55:07 by lomeress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ static int		check_case(char cs[4][5])
 	{
 		if (cs[y][x] == '#')
 			ht++;
-		if (x == 4)
+		if (x == 3)
 		{
 			y++;
 			x = 0;
 		}
-		else if (x < 4)
+		else if (x < 3)
 			x++;
 		else if ((cs[y][x] != '#' && cs[y][x] != '.') || (x > 3) || (y > 3))
 			error++;
